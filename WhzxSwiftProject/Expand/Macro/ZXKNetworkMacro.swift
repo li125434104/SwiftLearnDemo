@@ -7,5 +7,5 @@
 
 import Foundation
 
-let MainUrl = "http://whdx-jd-stage-api.bcbook.cn/jdapi/"
+let MainUrl = "http://whdx-jd-dev-api.bcbook.cn/jdapi/"
 

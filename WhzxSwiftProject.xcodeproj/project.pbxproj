@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		08B09ADD573EFD60F4D045EB /* Pods_WhzxSwiftProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E879667B627EF2DD2888985A /* Pods_WhzxSwiftProject.framework */; };
+		BF0987D225315F4F00D4BB9C /* ZXKNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0987D125315F4F00D4BB9C /* ZXKNetworking.swift */; };
 		BF50AB2D25300F4B004CC7D8 /* ZXKNetworkMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF50AB2C25300F4B004CC7D8 /* ZXKNetworkMacro.swift */; };
 		BF6346F82521D74700BCCFE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6346F72521D74700BCCFE2 /* AppDelegate.swift */; };
 		BF6346FF2521D74700BCCFE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6346FD2521D74700BCCFE2 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		9AEA03C24FA310163F99FEFB /* Pods-WhzxSwiftProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhzxSwiftProject.debug.xcconfig"; path = "Target Support Files/Pods-WhzxSwiftProject/Pods-WhzxSwiftProject.debug.xcconfig"; sourceTree = "<group>"; };
 		AD2E17E9477982CAC4E0A907 /* Pods-WhzxSwiftProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhzxSwiftProject.release.xcconfig"; path = "Target Support Files/Pods-WhzxSwiftProject/Pods-WhzxSwiftProject.release.xcconfig"; sourceTree = "<group>"; };
+		BF0987D125315F4F00D4BB9C /* ZXKNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXKNetworking.swift; sourceTree = "<group>"; };
 		BF50AB2C25300F4B004CC7D8 /* ZXKNetworkMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXKNetworkMacro.swift; sourceTree = "<group>"; };
 		BF6346F42521D74700BCCFE2 /* WhzxSwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhzxSwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6346F72521D74700BCCFE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,9 +99,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BF0987D025315DED00D4BB9C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BF0987D125315F4F00D4BB9C /* ZXKNetworking.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		BF50AB1C25300DEB004CC7D8 /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				BF0987D025315DED00D4BB9C /* Network */,
 				BF50AB1D25300DF7004CC7D8 /* Macro */,
 			);
 			path = Expand;
@@ -361,6 +372,7 @@
 				BF6346F82521D74700BCCFE2 /* AppDelegate.swift in Sources */,
 				BFFF44C52521DF3400B40DFF /* MainTabBarController.swift in Sources */,
 				BF50AB2D25300F4B004CC7D8 /* ZXKNetworkMacro.swift in Sources */,
+				BF0987D225315F4F00D4BB9C /* ZXKNetworking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

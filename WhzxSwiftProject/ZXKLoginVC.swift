@@ -28,7 +28,9 @@ class ZXKLoginVC: UIViewController {
 
     func loginRequest(parameters: LoginParameters) {
         print(parameters.mobile + "-----" + parameters.password)
-        
+        AF.request(MainUrl + "app/advert", method: .get).response { response in
+            debugPrint(response)
+            
+        }
     }
-
 }
