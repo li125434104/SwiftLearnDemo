@@ -29,10 +29,16 @@ class ZXKLoginVC: UIViewController {
     func loginRequest(parameters: LoginParameters) {
         print(parameters.mobile + "-----" + parameters.password)
      
-        ZXKNetworking.shared.requestGetWith(url: "app/advert") { (json) in
-            debugPrint(json)
+//        ZXKNetworking.shared.requestGetWith(url: "app/advert") { (json) in
+//            debugPrint(json)
+//        } failed: { (error) in
+//            debugPrint(error)
+//        }
+
+        ZXKNetworking.shared.requestPostWithParameters(url: "v1.1/user/login", parameters: parameters) { (json) in
+            
         } failed: { (error) in
-            debugPrint(error)
+            
         }
 
 

@@ -7,4 +7,5 @@ target 'WhzxSwiftProject' do
 
   # Pods for WhzxSwiftProject
   pod 'Alamofire', '~> 5.2'
+  pod 'HandyJSON', '~> 5.0.2'
 end
