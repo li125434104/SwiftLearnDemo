@@ -77,7 +77,7 @@ public class ZXKNetworking {
                 failed: failed)
     }
     
-    public func requestPostWithParameters(url: String,
+    public func  requestPostWithParameters(url: String,
                                           parameters: [String: Any]?,
                                           success: @escaping NetworkingSuccessClosure,
                                           failed: @escaping NetworkingFailedClosure) {

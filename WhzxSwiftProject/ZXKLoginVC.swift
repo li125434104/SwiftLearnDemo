@@ -8,11 +8,6 @@
 import UIKit
 import Alamofire
 
-struct LoginParameters: Encodable {
-    let mobile: String
-    let password: String
-}
-
 class ZXKLoginVC: UIViewController {
 
     override func viewDidLoad() {
@@ -22,13 +17,14 @@ class ZXKLoginVC: UIViewController {
     }
 
     @IBAction func loginButtonClick(_ sender: UIButton) {
-        let parameters = LoginParameters(mobile: "18514006518", password: "123456")
+        var parameters = [String: String]()
+        parameters["mobile"] = "18514006518"
+        parameters["password"] = "123456"
+        parameters["uuid"] = "8udfhsajkjds8fa8ljlfkdasj"
         loginRequest(parameters: parameters)
     }
 
-    func loginRequest(parameters: LoginParameters) {
-        print(parameters.mobile + "-----" + parameters.password)
-     
+    func loginRequest(parameters: [String: String]) {     
 //        ZXKNetworking.shared.requestGetWith(url: "app/advert") { (json) in
 //            debugPrint(json)
 //        } failed: { (error) in
